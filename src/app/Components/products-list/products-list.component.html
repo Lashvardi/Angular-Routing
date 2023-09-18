@@ -1,0 +1,8 @@
+<div class="flex-box">
+  <div class="card" *ngFor="let product of productsArray">
+    <small>{{product.id}}</small>
+    <h3>{{product.phoneName}}</h3>
+    <p>{{product.price}}</p>
+    <button (click)="viewDetails(product.id)">details</button>
+  </div>
+</div>

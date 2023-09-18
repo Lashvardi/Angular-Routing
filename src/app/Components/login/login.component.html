@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Login form</h2>
+  <form (submit)="handleAuth()">
+    <input [(ngModel)]="authValues.email" name="email" placeholder="Email" type="text">
+    <input [(ngModel)]="authValues.password" name="password" placeholder="Password" type="password">
+    <button type="submit">Login</button>
+  </form>
+  <a href="/auth/Register">Go To Register</a>
+</div>
